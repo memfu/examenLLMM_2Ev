@@ -124,15 +124,22 @@
                             <input type="radio" name="genero" value="mujer">Mujer
                             <input type="radio" name="genero" value="otro">Prefiero no decir                    
                 </fieldset>
-
-                        <label for="apellidos">Apellidos(*):</label>
-                        <input type="text" id="apellidos" name="apellidos" class="inputLargo" required>
-                        <label for="dni">DNI:</label>
-                        <input type="text" id="dni" name="dni">
-                        <label for="fechaNac" id="campoFechaNac">Fecha de nacimiento:</label>
-                        <input type="date" id="fechaNac" name="fechaNac">
-                                                
-                    </div>
+                <fieldset>         
+                    <label for="fechaNac" id="campoFechaNac">Fecha nacimiento:</label>
+                        <input type="date" id="fechaNac" name="fechaNac">                 
+                </fieldset>
+                <fieldset>         
+                    <legend>PERSONAJES</legend>
+                        <div class="campo">
+                            <label for="personajes">Selecciona el personaje</label>
+                            <input type="text" name="personajes" id="personajes" required>
+                        </div>                
+                </fieldset>
+                <fieldset>         
+                    <legend>COMENTARIOS</legend>
+                    <textarea name="comentarios" id="comentarios"></textarea>             
+                </fieldset>
+                <input type="submit" value="Enviar"><input type="reset" value="Borrar">                                         
             </form>
         </div>
 
