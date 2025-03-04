@@ -1,0 +1,122 @@
+:root {
+    background-image: url("../img/fondo2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titulos {
+    font-family: "Street", sans-serif;
+    color: crimson;
+    text-align: center;
+}
+
+h1 {
+    font-size: 46px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+/*Tabla*/
+
+table {
+    background-color: black;
+    width: 600px;
+    height: 800px;
+    border: 10px outset rgb(237,175,5);
+    border-radius: 10px;
+    margin: auto;
+}
+
+tr, td {
+    width: 40px;
+    height: 45px;
+    font-family: "Street", sans-serif;
+    border: 2px solid grey;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: darkorange;
+    text-align: center;
+    
+}
+
+/*Tipografía*/
+@font-face {
+    font-family: "Street";
+    src: url("../font/street.otf") format("truetype");
+}
+
+.marcador {
+    font-family: "Retro", sans-serif;
+    background-color: black;
+    border: 5px solid black;
+    text-align: center;
+    border-bottom-color: white;
+}
+
+.marcadorSuperior{
+    font-size: 40px;
+    color: red;
+}
+
+.marcadorInferior {
+    font-size: 32px;
+    color: white;
+}
+
+#marcadorInferiorIzq{
+    margin-right: 50px;
+}
+
+/* FORMULARIO */
+
+#formulario {
+    width: 600px;
+    height: 1100px;
+    border: 10px outset rgb(237,175,5);
+    color: white;
+    border-radius: 10px;
+    background-color: black;
+    margin: auto;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 80%;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+fieldset {margin-bottom: 1rem;}
+
+    .campo {display: block;}
+
+    .campo label {
+        display: inline-block;
+        width: 4rem;
+        margin: 0.7rem 0;
+        margin-right: 10px;
+    }
+
+    .campo input {margin-left: 0.5rem;}
+
+.elemento label,
+.elemento input {
+    display: inline-block;
+    width: 10rem;
+}
+
+/* Ejemplo de display: inline-block */
+
+#ejemplo_display {
+    background-color: brown;
+    width: 800px;
+    height: 300px;
+}
+
+.dentro {
+    background-color: yellowgreen;
+    min-width: 100px;
+    border: 1px solid red;
+    display: inline-block;
+}
