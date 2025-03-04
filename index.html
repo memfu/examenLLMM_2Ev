@@ -14,6 +14,9 @@
     <h1 class="titulos">To live is to fight, to fight is to live!</h1>
     <table>
         <tr>
+            <th>
+                STREET FIGHTER
+            </th>
             <td>
                 <p>KEN</p>
                 <img src="./assets/img/ken.png" alt="KEN">
@@ -102,11 +105,11 @@
                     </div>
                     <div class="elemento">
                         <label for="direccion">Dirección Postal: </label>
-                        <input type="text" name="direccion" id="calle" required>
-                        <input type="text" name="direccion" id="nr." required>
-                        <input type="text" name="direccion" id="piso" required>
-                        <input type="text" name="direccion" id="codPostal" required>
-                        <input type="text" name="direccion" id="ciudad" required>
+                        <input type="text" class="direccionInput" name="direccion" id="calle" required placeholder="Calle">
+                        <input type="text" class="direccionInput" name="direccion" id="nr." required placeholder="Nr.">
+                        <input type="text" class="direccionInput" name="direccion" id="piso" required placeholder="Piso">
+                        <input type="text" class="direccionInput" name="direccion" id="codPostal" required placeholder="Cód. Postal">
+                        <input type="text" class="direccionInput" name="direccion" id="ciudad" required placeholder="Ciudad">
                     </div>
                     <div class="elemento">
                         <label for="nick">Nick: </label>
@@ -119,10 +122,12 @@
                 </fieldset>
                 <fieldset>         
                     <legend>SEXO USUARIO</legend>
+                    <div class="elemento" id="genero">
                         <label for="genero" id="campoGenero"></label>
                             <input type="radio" name="genero" value="hombre">Hombre
                             <input type="radio" name="genero" value="mujer">Mujer
-                            <input type="radio" name="genero" value="otro">Prefiero no decir                    
+                            <input type="radio" name="genero" value="otro">Prefiero no decir     
+                    </div>               
                 </fieldset>
                 <fieldset>         
                     <label for="fechaNac" id="campoFechaNac">Fecha nacimiento:</label>
@@ -130,7 +135,7 @@
                 </fieldset>
                 <fieldset>         
                     <legend>PERSONAJES</legend>
-                        <div class="campo">
+                        <div class="campoLargo">
                             <label for="personajes">Selecciona el personaje</label>
                             <input type="text" name="personajes" id="personajes" required>
                         </div>                
